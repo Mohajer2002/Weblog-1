@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Dana";
+    src: url("/public/Fonts/dana/dana-fanum-regular.ttf") format("truetype");
+  }
+  * {
+    @apply p-0 m-0 box-border font-Dana scroll-smooth scroll-pt-24;
+  }
+  body {
+    @apply text-lg text-cBlack-500 bg-cWhite;
+  }
+  ul {
+    @apply list-none;
+  }
+  h1 {
+    @apply text-3xl md:text-5xl lg:text-7xl;
+  }
+  h2 {
+    @apply text-3xl md:text-5xl lg:text-6xl;
+  }
+  h3 {
+    @apply text-2xl md:text-3xl;
+  }
+  h6 {
+    @apply text-lg md:text-xl;
+  }
+  p {
+    @apply text-base md:text-lg text-cBlack-100;
+  }
+  p,
+  h1,
+  h2,
+  h3 {
+    @apply leading-relaxed;
+  }
+}
+
+@layer components {
+  .pLight {
+    @apply text-cBlack-100;
+  }
+  .squareIcon {
+    @apply w-3 h-3 flex rounded-[3px] bg-cBlue-500 shadow-lg shadow-cBlue-500;
+  }
+  .title .details {
+    @apply w-1/2 text-center;
+  }
+  a,
+  .linkHover {
+    @apply transition-colors duration-300 hover:text-cBlue-400;
+  }
+  .btn {
+    @apply py-2 px-5 bg-cBlue-400 rounded-3xl gap-x-2 transition duration-500 hover:shadow-2xl hover:shadow-cBlue-500 hover:scale-[1.02] text-cWhite;
+  }
+  .navbarMobile {
+    @apply absolute transition-[height] duration-700 w-full h-auto bg-cBlue-100 top-20;
+  }
+  .footerItem {
+    @apply flex flex-col justify-start items-center gap-y-5 py-10 text-center px-2 sm:px-5 md:px-8 lg:px-10 xl:px-16;
+  }
+  .footerItem h3 {
+    @apply font-extrabold;
+  }
+  .smallIcon {
+    @apply bg-cBlue-100 min-w-8 min-h-8 p-1 rounded-xl;
+  }
+  .smallIcon .icon {
+    @apply fill-cBlue-400;
+  }
+  .footerItem .addreses .content {
+    @apply flex flex-row justify-start items-center gap-x-3;
+  }
+  .boxAround {
+    @apply border border-solid border-[#e6e7eb] rounded-2xl transition-[box-shadow,transform] duration-[400ms,500ms] bg-white hover:shadow-2xl hover:scale-[1.01];
+  }
+  a.navLink.active {
+    @apply !text-cBlue-500 font-extrabold border-0 border-b-2 border-cBlue-500 rounded-md;
+  }
+  .inp {
+    @apply w-full h-1/2 font-Dana text-lg md:text-2xl p-5 bg-cWhite border rounded-xl outline-2 outline-cBlue-400;
+  }
+}
