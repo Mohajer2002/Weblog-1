@@ -1,12 +1,6 @@
-# React + Vite
+# Landing page + Weblog with [React.js - Tailwind]
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
+The site has four sections for landing and a blog section with the ability to post news
 
 ## Preview
 [ScreenRecord](https://drive.google.com/drive/folders/1DWV7WzmCWx9Mo2OP4AEqOFG3Xpcy_rHR?usp=sharing)
